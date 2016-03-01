@@ -1,0 +1,403 @@
+Preprocessor #include <stdio.h>
+
+Preprocessor #include <string.h>
+
+Preprocessor #include <stdlib.h>
+
+INT int
+ 
+IDENTIFIER ptr
+ 
+= =
+ 
+CONSTANT 0
+ END_OF_STATEMENT ;
+
+CHAR char
+ 
+IDENTIFIER input
+[ [
+CONSTANT 10000
+] ]
+ END_OF_STATEMENT ;
+
+
+VOID void
+ 
+IDENTIFIER E
+( (
+) )
+ END_OF_STATEMENT ;
+
+VOID void
+ 
+IDENTIFIER T
+( (
+) )
+ END_OF_STATEMENT ;
+
+
+INT int
+ 
+IDENTIFIER main
+( (
+) )
+
+
+ BEGIN_BLOCK {
+
+	
+CHAR char
+ 
+IDENTIFIER array
+[ [
+CONSTANT 1000
+] ]
+ END_OF_STATEMENT ;
+
+	
+IDENTIFIER scanf
+( (
+STRING_LITERAL "%s"
+, ,
+ 
+IDENTIFIER input
+) )
+ END_OF_STATEMENT ;
+
+	
+IDENTIFIER E
+( (
+) )
+ END_OF_STATEMENT ;
+
+	
+RETURN return
+ 
+CONSTANT 0
+ END_OF_STATEMENT ;
+
+
+ END_BLOCK
+ }
+
+
+VOID void
+ 
+IDENTIFIER E
+( (
+) )
+
+
+ BEGIN_BLOCK {
+
+	
+IF if
+( (
+IDENTIFIER input
+[ [
+IDENTIFIER ptr
+] ]
+EQ_OP ==
+CONSTANT 'x'
+) )
+
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+IDENTIFIER ptr
+INC_OP ++
+ END_OF_STATEMENT ;
+
+	
+	
+IF if
+( (
+IDENTIFIER input
+[ [
+IDENTIFIER ptr
+] ]
+ 
+EQ_OP ==
+ 
+CONSTANT '+'
+) )
+
+	
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "E->x+T\n"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+	
+IDENTIFIER ptr
+INC_OP ++
+ END_OF_STATEMENT ;
+
+	
+	
+	
+IDENTIFIER T
+( (
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+	
+RETURN return
+ END_OF_STATEMENT ;
+
+	
+	
+
+ END_BLOCK
+ }
+
+	
+	
+ELSE else
+
+	
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "Error at E->x+T"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+	
+IDENTIFIER exit
+( (
+CONSTANT 0
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+
+ END_BLOCK
+ }
+
+	
+
+ END_BLOCK
+ }
+
+	
+ELSE else
+
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "Error at E->x+T"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+IDENTIFIER exit
+( (
+CONSTANT 0
+) )
+ END_OF_STATEMENT ;
+
+	
+
+ END_BLOCK
+ }
+
+
+ END_BLOCK
+ }
+
+
+VOID void
+ 
+IDENTIFIER T
+( (
+) )
+
+
+ BEGIN_BLOCK {
+
+	
+IF if
+( (
+IDENTIFIER input
+[ [
+IDENTIFIER ptr
+] ]
+ 
+EQ_OP ==
+ 
+CONSTANT '('
+) )
+
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+IDENTIFIER ptr
+INC_OP ++
+ END_OF_STATEMENT ;
+
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "T->(E)\n"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+IDENTIFIER E
+( (
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+IF if
+( (
+IDENTIFIER input
+[ [
+IDENTIFIER ptr
+] ]
+ 
+EQ_OP ==
+ 
+CONSTANT ')'
+) )
+
+	
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+	
+IDENTIFIER ptr
+INC_OP ++
+ END_OF_STATEMENT ;
+
+	
+	
+	
+RETURN return
+ END_OF_STATEMENT ;
+
+	
+	
+
+ END_BLOCK
+ }
+
+	
+
+ END_BLOCK
+ }
+
+	
+IF if
+( (
+IDENTIFIER input
+[ [
+IDENTIFIER ptr
+] ]
+ 
+EQ_OP ==
+ 
+CONSTANT 'x'
+) )
+
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+IDENTIFIER ptr
+INC_OP ++
+ END_OF_STATEMENT ;
+
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "T->x\n"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+RETURN return
+ END_OF_STATEMENT ;
+
+	
+
+ END_BLOCK
+ }
+
+	
+ELSE else
+
+	
+
+ BEGIN_BLOCK {
+
+	
+	
+IDENTIFIER printf
+( (
+STRING_LITERAL "Error at T->"
+) )
+ END_OF_STATEMENT ;
+
+	
+	
+IDENTIFIER exit
+( (
+CONSTANT 0
+) )
+ END_OF_STATEMENT ;
+
+	
+
+ END_BLOCK
+ }
+
+
+ END_BLOCK
+ }
+

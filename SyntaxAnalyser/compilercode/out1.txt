@@ -1,0 +1,125 @@
+Preprocessor #include<stdio.h>
+
+INT int
+ 
+IDENTIFIER factorial
+( (
+INT int
+ 
+IDENTIFIER n
+) )
+
+
+ BEGIN_BLOCK {
+
+ 
+ 
+INT int
+ 
+IDENTIFIER fact
+= =
+CONSTANT 1
+ END_OF_STATEMENT ;
+ 
+
+ 
+ 
+ 
+FOR for
+( (
+ END_OF_STATEMENT ;
+IDENTIFIER n
+> >
+CONSTANT 1
+ END_OF_STATEMENT ;
+IDENTIFIER n
+DEC_OP --
+) )
+
+ 
+ 
+ 
+ 
+ 
+ 
+IDENTIFIER fact
+MUL_ASSIGN *=
+IDENTIFIER n
+ END_OF_STATEMENT ;
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+RETURN return
+ 
+IDENTIFIER fact
+ END_OF_STATEMENT ;
+
+
+ END_BLOCK
+ }
+
+
+INT int
+ 
+IDENTIFIER main
+( (
+) )
+
+
+ BEGIN_BLOCK {
+
+ 
+ 
+ 
+ 
+INT int
+ 
+IDENTIFIER n
+ 
+= =
+ 
+CONSTANT 4
+ END_OF_STATEMENT ;
+
+ 
+ 
+ 
+ 
+IDENTIFIER printf
+( (
+STRING_LITERAL "Factorial of %d = %ld"
+, ,
+ 
+IDENTIFIER n
+, ,
+ 
+IDENTIFIER factorial
+( (
+IDENTIFIER n
+) )
+) )
+ END_OF_STATEMENT ;
+
+ 
+ 
+ 
+ 
+RETURN return
+ 
+CONSTANT 0
+ END_OF_STATEMENT ;
+
+
+ END_BLOCK
+ }
+
