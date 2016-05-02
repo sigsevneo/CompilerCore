@@ -1,0 +1,36 @@
+SYMBOLS
+-----------------------------------
+Name                    Type    Int_Typ Offset	Line	Index1	Index2	Parent	Parameter
+---------------------------------------------------------------------------------------------
+main                	Main    Int     60		0		0		0		None		0		
+questionmark        	Func    Real    16		12		0		0		None		2		
+x                   	Int     None    0		0		0		0		questionmark		1		
+y                   	Int     None    4		0		0		0		questionmark		2		
+variable_1          	Int     None    0		0		0		0		main		0		
+variable_2          	Int     None    4		0		0		0		main		0		
+variable_4          	Int     None    8		0		0		0		main		0		
+variable_3          	Real    None    12		0		0		0		main		0		
+variable_5          	Real    None    20		0		0		0		main		0		
+V__H0               	Int     None    28		0		0		0		main		0		
+V__H1               	Int     None    32		0		0		0		main		0		
+V__H2               	Real    None    36		0		0		0		main		0		
+V__H3               	Real    None    44		0		0		0		main		0		
+V__H4               	Int     None    52		0		0		0		main		0		
+V__H5               	Int     None    56		0		0		0		main		0		
+result              	Real    None    8		0		0		0		questionmark		0		
+
+CODE
+-----------------------------------
+0	V__H0 := 1
+1	variable_1 := V__H0
+2	V__H1 := 2
+3	variable_2 := V__H1
+4	V__H2 := 1
+5	V__H3 := V__H2 - variable_3
+6	if (V__H3 = 0) goto 10
+7	V__H4 := 0
+8	return V__H4
+9	goto 12
+10	V__H5 := 1
+11	return V__H5
+12	return result
